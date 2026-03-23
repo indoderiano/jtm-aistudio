@@ -1,4 +1,7 @@
 import { ScheduleItem, Performer, Hotel } from './types';
+import RicardoYConstanza from './assets/ricardoyconstanza.jpg';
+import DJMasha from './assets/jtm26-dj-masha.png';
+import DJPunto from './assets/puntoybranca2.jpeg';
 
 export const EVENT_DETAILS = {
   name: "JAKARTA TANGO MARATHON",
@@ -12,10 +15,9 @@ export const EVENT_DETAILS = {
 };
 
 export const PERFORMERS: Performer[] = [
-  { name: "Constanza Vieyto y Ricardo Astrada", role: "THE ARTISTS", image: "https://picsum.photos/seed/tango1/400/500" },
-  { name: "Constanza Vieyto y Ricardo Astrada", role: "THE ARTISTS", image: "https://picsum.photos/seed/tango2/400/500" },
-  { name: "Punto y Branca", role: "DJS", image: "https://picsum.photos/seed/tango3/400/500" },
-  { name: "Randa Pramasha", role: "DJS", image: "https://picsum.photos/seed/tango4/400/500" },
+  { name: "Constanza Vieyto y Ricardo Astrada", role: "THE ARTISTS", image: RicardoYConstanza },
+  { name: "Punto y Branca", role: "DJS", image: DJPunto },
+  { name: "Randa Pramasha", role: "DJS", image: DJMasha },
 ];
 
 export const HOTELS: Hotel[] = [

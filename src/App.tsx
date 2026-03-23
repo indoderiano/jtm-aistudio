@@ -13,6 +13,8 @@ import {
   Star
 } from 'lucide-react';
 import { EVENT_DETAILS, PERFORMERS, HOTELS } from './constants';
+import Logo from "./assets/jtm-icon-onblack.png";
+import LogoTitle from "./assets/jtm-title-header-white.png";
 
 const Section = ({ title, children, id, className = "" }: { title?: string, children: React.ReactNode, id: string, className?: string }) => (
   <section id={id} className={`py-16 px-6 max-w-7xl mx-auto ${className}`}>
@@ -51,9 +53,12 @@ export default function App() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center overflow-hidden">
-               <img src="https://picsum.photos/seed/logo/100/100" alt="Logo" className="w-full h-full object-cover" />
+               <img src={Logo} alt="Logo" className="w-full h-full object-cover" />
             </div>
-            <span className="font-black tracking-tighter text-sm md:text-base uppercase italic">JAKARTA TANGO MARATHON</span>
+            <div className="flex h-15">
+               <img src={LogoTitle} alt="Logo" className="w-full h-full object-cover" />
+            </div>
+            {/* <span className="font-black tracking-tighter text-sm md:text-base uppercase italic">JAKARTA TANGO MARATHON</span> */}
           </div>
           <div className="hidden md:flex items-center gap-8 text-[10px] font-bold uppercase tracking-widest">
             <button onClick={() => scrollTo('hero')} className="hover:text-[#fbbf24] transition-colors">BOOK TICKETS</button>
