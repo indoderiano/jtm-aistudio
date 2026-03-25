@@ -1,10 +1,11 @@
 import { ScheduleItem, Performer, Hotel } from './types';
 import RicardoYConstanza from './assets/ricardoyconstanza.jpg';
 import DJMasha from './assets/jtm26-dj-masha.png';
-import DJPunto from './assets/puntoybranca.jpeg';
+import DJPunto from './assets/puntoybranca3.jpeg';
 import Sutasoma from './assets/sutasoma1.jpg';
 import Darmawangsa from './assets/101-2.jpeg';
 import Grandhika from './assets/grandhika-2.jpeg';
+import JTM from './assets/jtm-icon-onblack.png';
 import Tangolicious from './assets/logo-tangolicious.jpg';
 import Urban from './assets/logo-urban.jpg';
 
@@ -33,6 +34,7 @@ export const HOTELS: Hotel[] = [
 ];
 
 export const ORGANIZERS = [
+  { name: "Jakarta Tango Marathon", logo: JTM, instagramUrl: "https://www.instagram.com/jakarta_tangomarathon?igsh=NTFyOGM5YXA4ZGhr" },
   { name: "Tangolicious Jakarta", logo: Tangolicious, instagramUrl: "https://www.instagram.com/tangolicious.jakarta" },
   { name: "Urban Tango" , logo: Urban, instagramUrl: "https://www.instagram.com/urban_tango.jkt" },
 ];

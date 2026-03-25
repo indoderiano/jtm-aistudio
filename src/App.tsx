@@ -19,6 +19,7 @@ import Logo from "./assets/jtm-icon-onwhite.png";
 import LogoTitle from "./assets/jtm-title-header-white.png";
 import Mascot from "./assets/jtm26-mascot-yellow.png";
 import Elisse from "./assets/elisse.jpeg";
+import Background from "./assets/background.jpeg";
 
 const Section = ({ title, children, id, className = "" }: { title?: string, children: React.ReactNode, id: string, className?: string }) => (
   <section id={id} className={`py-16 px-6 max-w-7xl mx-auto ${className}`}>
@@ -84,12 +85,12 @@ export default function App() {
       <section id="hero" className="relative h-screen flex flex-col items-center justify-center overflow-hidden pt-20">
         <motion.div 
           initial={{ scale: 1.1, opacity: 0 }}
-          animate={{ scale: 1, opacity: 0.3 }}
+          animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1.5 }}
           className="absolute inset-0 z-0"
         >
           <img 
-            src="https://picsum.photos/seed/tango-hero/1920/1080" 
+            src={Background}
             alt="Tango Dancers" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -103,14 +104,14 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             className="mb-8 flex justify-center"
           >
-            <div className="relative w-48 h-48">
+            <div className="relative w-64 h-64">
                <img src={Mascot} alt="Tango For Life" className="w-full h-full object-contain" />
                {/* Simulating the logo text if image is just placeholder */}
-               <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+               {/* <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
                   <span className="text-[#fbbf24] font-black text-4xl italic leading-none">TANGO</span>
                   <span className="text-white font-black text-xl italic leading-none">FOR</span>
                   <span className="text-emerald-500 font-black text-4xl italic leading-none">LIFE</span>
-               </div>
+               </div> */}
             </div>
           </motion.div>
 
@@ -170,7 +171,7 @@ export default function App() {
 
       {/* Performers Section */}
       <div className="bg-[#0d1b2a]/40">
-        <Section title="THE LINEUP" id="performers">
+        <Section title="Performers" id="performers">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {PERFORMERS.map((performer, index) => (
               <motion.div 
